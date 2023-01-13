@@ -1,0 +1,74 @@
+.navbar{
+    
+    color: white;
+    position: sticky;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.663);
+    top: 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 4rem;
+        .left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            .logo{
+                img{
+                    width: 8rem;
+                    height: 2rem;
+                    object-fit: cover;
+                }
+            }
+            span{
+                cursor: pointer;
+                font-weight: 600;
+            }
+        }
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+           
+
+            img{
+                width: 2rem;
+                height: 2rem;
+                border-radius: 0.5rem;
+            }
+            span{
+                cursor: pointer;
+            }
+            .options{
+                position: relative;
+                .info{
+                    display: none;
+                    background-color: black;
+                    padding: 1rem;
+                    
+                    span{
+                        cursor: pointer;
+                    }
+                }
+                &:hover {
+                    .info{
+
+                        display: flex;
+                        position: absolute;
+                        flex-direction: column;
+                        gap: 1.5rem;
+                        right: -2rem;
+                        border-radius: 1rem;
+                        
+                    }
+                    
+                }
+            }
+
+
+
+        }
+    }
+}
